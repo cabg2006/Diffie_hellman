@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithme de Diffie et Hellman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+ rel="stylesheet">
+    <title>Algorithme de Diffie-Hellman</title>
+    <link rel="stylesheet" href="../../CSS/Style2.css">
+    <link rel="shortcut icon" href="../Documents/image.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav  class="navbar navbar-expand-md navbar-dark bg-danger">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs
+target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria
+label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">   
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="../accueil.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="Algorithmes.html">Algorithme</a></li>
+                <li class="nav-item"><a class="nav-link" href="Enjeux.html">Enjeux</a></li>
+                <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz sur deux cryptographes</a></li>
+          </ul>
+        </nav>
+    </header>
+    <h1>L'Algorithme</h2>
+    <p>L'algorithme Diffie-Hellman est un protocole fondamental en cryptographie, conçu pour permettre à deux parties de partager une clé secrète de manière sécurisée, même en utilisant un canal de communication non sécurisé. Voici une explication concise et claire de son fonctionnement :</p>
+    <h2>Principe de base</h2>
+    <aside class="mon">
+        <p>
+            Étant donnés des entiers $p,a,x$, avec $p$ premier et $1\leq a\leq p-1$ :
+            <ul>
+                <li>il est facile de calculer l'entier $y=a^x\ (\mod p)$.</li>
+                <li>si on connait $y=a^x\ (\mod p)$, $a$ et $p$, <br>il est très difficile de retrouver $x$, pourvu que $p$ soit assez grand.</li>
+            </ul>
+        </p>
+    </aside>
+    <img src="../Images/echange.jpg" alt="">
+    <section class="container-fluid">
+    <section class="row bg-success">
+        <article class="col border"> 
+            <h3 id="BDMorBDD">Étapes de l'échange :</h3>
+            <ul>
+                <li>Partie A choisit un secret privé a, calcule A=g^a mod p,et envoie A à la partie B </li>
+                <li>Partie B choisit un secret privé b ,calcule B=g^b mod p, et envoie B à la partie A </li>
+            </ul>
+        </article>
+        <article class="col border">
+    <h3 id="BDMorBDD">Paramètre publics</h3>
+    <ul>
+       <li>Les deux parties conviennent d'un nombre premier p et d'une base g (appelée générateur), qui sont publics</li>
+    </ul>
+        </article>
+        <article class="col border">
+            <h3 id="BDMorBDD">Calcul de la clé commune:</h3>
+                <ul>
+                    <li>Partie A calcul K=B^a mod p .</li>
+                    <li>Partie B Calcul K=A^b mod p</li>
+                    <li>Grâce aux propriétés des exponentiations mod p ,les deux parties obtiennent la même clé secrete K. </li>
+                </ul>
+        </article>
+    </section>
+</section>
+<footer>
+    <p>Liens utiles</p>
+    <ul>
+        <li><a href="../accueil.html">Retour à la page d'accueil <br></a></li>
+        <li><a href="#BDMorBDD">Retour vers les explications sur l'algorithme</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

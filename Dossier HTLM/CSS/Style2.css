@@ -1,0 +1,51 @@
+body {
+            background-image: url(../html/Images/pont.jpg);
+            background-color: green;
+            color: black;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+        h2{
+            text-align: center;
+            color: blue;
+        }
+        h3{
+            color: chocolate;
+        }
+        nav.li{
+            padding:20px 40px;
+            text-align: center;
+            
+        }
+        
+        a:active{
+            display: block;
+            margin: 10px 0;
+            color:violet;
+            text-align: center;
+
+        }
+        aside {
+            margin-right: 0%;
+            padding: bottom -90px;;
+            max-width: 600px;
+            height: auto;
+            margin-top: 20px;
+            float: right;
+        }
+        img{
+            border-radius: 100px;
+            text-align: center;
+            width: 700px;
+            
+        }
+        .mon{
+            border: 7px solid aqua; /* bordure sur les 4 côtés */
+            padding: 55px;
+            border-radius: 5px; /* coins arrondis optionnels */
+        }
+        footer{
+            text-align: justify;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: smaller;
+        }
