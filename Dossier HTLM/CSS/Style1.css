@@ -1,7 +1,5 @@
         body {
-            /* background-image: url(../html/Images/pont.jpg); */
-            background-color: cyan !important;
-            /* background-color: green; */
+            background-image: url(../html/Images/pont.jpg);
             color: black;
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
